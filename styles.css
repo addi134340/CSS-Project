@@ -52,7 +52,10 @@ header {
 
 .logo:hover {
     transform: scale(1.1);
-    text-shadow: #9400d3;
+    text-shadow: 
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff;
 }
 
 nav a{
@@ -71,7 +74,8 @@ nav a:hover {
     0px 0px 20px #9400d3,
     0px 0px 30px #9400d3, 
     0px 0px 40px #9400d3,
-    0px 0px 50px rgba(148, 0, 211, 0.7);
+    0px 0px 50px #9400d3,
+    0px 0px 60px #9400d3;
 }
 
 #home {
@@ -99,7 +103,7 @@ span {
     color: #007bff;
 }
 
-hr {
+.hr1 {
     border: 2px solid #9400d3;
     width: 400px;
     margin-left: 40px;
@@ -161,6 +165,8 @@ hr {
     justify-content: center;
     align-items: center;
     font-size: 6rem;
+    text-decoration: underline 3px solid #007bff;
+    text-underline-offset: 10px;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
@@ -211,8 +217,8 @@ hr {
 }
 
 #skills {
-    min-height: 90vh;
-    padding-top: 100px;
+    min-height: 100vh;
+    padding-top: 250px;
 }
 
 #skills h2 {
@@ -221,6 +227,112 @@ hr {
     justify-content: center;
     align-items: center;
     font-size: 6rem;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+    text-decoration: underline 3px solid #9400d3;
+    text-underline-offset: 5px;
+}  
+
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    row-gap: 80px;
+    max-width: 800px; 
+    margin: auto;
 }
+
+i {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#007bff
+}
+
+i:hover {
+    text-shadow: 
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff,
+    0 0 40px #ffffff;
+}
+
+#skills h2:hover {
+    text-shadow: 
+    0 0 10px #007bff,
+    0 0 20px #007bff,
+    0 0 30px #007bff;
+}
+
+#projects h2:hover {
+    text-shadow:
+    0 0 10px #9400d3,
+    0 0 20px #9400d3,
+    0 0 30px #9400d3, 
+    0 0 40px #9400d3;
+}
+
+#contact {
+    min-height: 100vh;
+    padding-top: 200px;
+}
+
+#contact h2 {
+    font-family: "Comfortaa", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    text-decoration: underline 3px solid #007bff;
+    text-underline-offset: 5px;
+}
+
+#contact-text {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mori {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30%;
+}
+
+#mori h3{
+    font-family: "Comfortaa", serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    text-decoration: underline 3px solid #007bff;
+    text-underline-offset: 5px;
+}
+
+#social-icons, #others {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+#insta:hover, #tiktok:hover, #github:hover, #linked:hover {
+    transform: scale(1.1);
+    text-shadow: 
+    0 0 10px #007bff,
+    0 0 20px #007bff,
+    0 0 30px #007bff;
+}
+
