@@ -328,11 +328,11 @@ i:hover {
     margin-top: 10px;
 }
 
-#insta:hover, #tiktok:hover, #github:hover, #linked:hover {
+#insta:hover, #tiktok:hover, #github:hover, #linked:hover, #email:hover, #discord:hover {
     transform: scale(1.1);
-    text-shadow: 
-    0 0 10px #007bff,
-    0 0 20px #007bff,
-    0 0 30px #007bff;
+    transition: transform 0.3s ease-in-out;
 }
 
+a {
+    text-decoration: none;
+}
